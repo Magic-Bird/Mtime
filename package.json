@@ -6,6 +6,7 @@
     "axios": "^0.17.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {
@@ -18,13 +19,17 @@
     "/Service": {
       "target": "http://m.mtime.cn",
       "changeOrigin": true,
-      "pathRewrite": {"^/Service": "/Service"},
+      "pathRewrite": {
+        "^/Service": "/Service"
+      },
       "ws": true
     },
     "/users": {
       "target": "http://10.2.151.232:8080",
       "changeOrigin": true,
-      "pathRewrite": {"^/users": "/users"},
+      "pathRewrite": {
+        "^/users": "/users"
+      },
       "ws": true
     }
   }

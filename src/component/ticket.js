@@ -1,8 +1,8 @@
-import React,{component} from 'react';
+import React,{Component} from 'react';
 import axios from 'axios'
 
 
-export default class regist extends component {
+export default class Ticket extends Component {
 	render(){
 		return(
 			<div>购票</div>

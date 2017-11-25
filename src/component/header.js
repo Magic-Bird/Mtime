@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import '../App.css'
 import logo from '../images/logo_mtime.png'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
-export default class header extends Component {
+export default class Header extends Component {
 	constructor(){
 		super();
 	}
@@ -14,10 +19,10 @@ export default class header extends Component {
 					<img src={logo} />
 				</div>
 				<ul>
-					<li>首页</li>
-					<li>购票</li>
-					<li>商城</li>
-					<li>发现</li>
+					<li><Link to="/">首页</Link></li>
+					<li><Link to="/ticket">购票</Link></li>
+					<li><Link to="/">商城</Link></li>
+					<li><Link to="/">发现</Link></li>
 				</ul>
 			</div>
 		)
