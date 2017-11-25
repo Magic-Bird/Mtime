@@ -25,21 +25,27 @@ export default class App extends Component {
     
   }
   render() {
-    // console.log(this)
+    console.log(this.state.message.length)
     var list =this.state.message.map((item, index)=>{
-      return (
-        <div key={item.id} >
+      if(index<8){
+        return (
+          <div key={item.id} >
+              
+              <img src={item.img} />
+              <div>{item.tCn}</div>
             
-            <img src={item.img} />
-            <h2>{item.tCn}</h2>
-          
-        </div>
-      );
+          </div>
+        );
+      }
+     
     })
     return (
       <div className="App">
         <Header />
         <div className="playinglist">
+          <div className="playnow">
+            <div>正在热映（{this.state.message.length}部）</div>
+          </div>
           {list}
         </div>
         
