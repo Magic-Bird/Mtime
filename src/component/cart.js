@@ -1,8 +1,8 @@
-import React,{component} from 'react';
+import React,{Component} from 'react';
 import axios from 'axios'
 
 
-export default class regist extends component {
+export default class Cart extends Component {
 	render(){
 		return(
 			<div>购物车</div>

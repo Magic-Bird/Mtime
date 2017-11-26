@@ -1,14 +1,18 @@
-import React,{component} from 'react';
+import React,{Component} from 'react';
 import axios from 'axios'
 
 
-export default class login extends component {
+export default class Login extends Component {
 	constructor(){
 		super();
 	}
 	render(){
 		return(
-			<div>登陆</div>
+			<div>
+				<div>
+				登陆
+				</div>
+			</div>
 		)
 	}
 	

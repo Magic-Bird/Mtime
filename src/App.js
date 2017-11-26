@@ -4,6 +4,10 @@ import './App.css';
 import Header from './component/header';
 import Home from './component/home';
 import Ticket from './component/ticket';
+import Shoping from './component/shoping';
+import Discovery from './component/discovery';
+import Login from './component/login';
+import Regist from './component/regist';
 import {
   BrowserRouter as Router,
   Route,
@@ -82,6 +86,10 @@ const App = () => (
 
       <Route exact path="/" component={Home}/>
       <Route path="/ticket" component={Ticket}/>
+      <Route path="/shoping" component={Shoping}/>
+      <Route path="/discovery" component={Discovery}/>
+      <Route path="/login" component={Login}/>
+      <Route path="/regist" component={Regist}/>
       
     </div>
   </Router>

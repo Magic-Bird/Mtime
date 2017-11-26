@@ -1,8 +1,8 @@
-import React,{component} from 'react';
+import React,{Component} from 'react';
 import axios from 'axios'
 
 
-export default class regist extends component {
+export default class Regist extends Component {
 	getuser(){
      axios.post("/users/regist",{
       username:'tan',
