@@ -46,9 +46,9 @@ ul{
     line-height: 50px;
     background: #333;
     color: #fff;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
-    top: 0;
+    /*top: 0;*/
     display: flex;
     box-sizing: border-box;
 }
