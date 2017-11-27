@@ -17,6 +17,7 @@ export default class Login extends Component {
 		return(
 			<div>
 				<div>
+					登陆页
 					<input type="text" placeholder="请输入账号" />
 					<input type="password" placeholder="请输入密码" />
 					<button>登陆</button>
