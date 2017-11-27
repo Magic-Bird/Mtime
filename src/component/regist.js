@@ -12,8 +12,8 @@ export default class Regist extends Component {
 
 	render(){
 		return(
-			<div>
-				注册页
+			<div className='lr'>
+				
 				<input type="text" placeholder="请输入账号" ref='username'/>
 				<input type="password" placeholder="请输入密码" ref='password'/>
 				<button className='regist' onClick={()=>this.getuser()}>注册</button>

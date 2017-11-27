@@ -16,8 +16,8 @@ export default class Login extends Component {
 	render(){
 		return(
 			<div>
-				<div>
-					登陆页
+				<div className='lr'>
+					
 					<input type="text" placeholder="请输入账号" ref='username'/>
 					<input type="password" placeholder="请输入密码" ref='password'/>
 					<button className='login' onClick={()=>this.getuser()}>登陆</button>
