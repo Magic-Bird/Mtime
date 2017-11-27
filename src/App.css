@@ -132,6 +132,9 @@ ul{
   padding: 2%;
   position: relative;
 }
+.playinglist>div>a>div{
+  color: #000;
+}
 .playinglist>div>a>span{
   position: absolute;
   right: 1em;
