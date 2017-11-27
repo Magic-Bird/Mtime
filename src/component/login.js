@@ -20,8 +20,8 @@ export default class Login extends Component {
 					登陆页
 					<input type="text" placeholder="请输入账号" ref='username'/>
 					<input type="password" placeholder="请输入密码" ref='password'/>
-					<button onClick={()=>this.getuser()}>登陆</button>
-					<button><Link to="/regist">注册</Link></button>
+					<button className='login' onClick={()=>this.getuser()}>登陆</button>
+					<button className='regist'><Link to="/regist">注册</Link></button>
 
 				</div>
 			</div>

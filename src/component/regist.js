@@ -16,8 +16,8 @@ export default class Regist extends Component {
 				注册页
 				<input type="text" placeholder="请输入账号" ref='username'/>
 				<input type="password" placeholder="请输入密码" ref='password'/>
-				<button onClick={()=>this.getuser()}>注册</button>
-				<button><Link to="/login">登陆</Link></button>
+				<button className='regist' onClick={()=>this.getuser()}>注册</button>
+				<button className='login'><Link to="/login">登陆</Link></button>
 			</div>
 		)
 	}

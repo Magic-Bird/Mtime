@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './antd.css'
 import './App.css';
 import Header from './component/header';
 import Home from './component/home';
@@ -81,15 +82,17 @@ const App = () => (
 
   <Router>
 
-    <div>
+    <div className='app'>
       <Header/>
+      <div className='main'>
+        <Route exact path="/" component={Home}/>
+        <Route path="/ticket" component={Ticket}/>
+        <Route path="/shoping" component={Shoping}/>
+        <Route path="/discovery" component={Discovery}/>
+        <Route path="/login" component={Login}/>
+        <Route path="/regist" component={Regist}/>
+      </div>
 
-      <Route exact path="/" component={Home}/>
-      <Route path="/ticket" component={Ticket}/>
-      <Route path="/shoping" component={Shoping}/>
-      <Route path="/discovery" component={Discovery}/>
-      <Route path="/login" component={Login}/>
-      <Route path="/regist" component={Regist}/>
       
     </div>
   </Router>
