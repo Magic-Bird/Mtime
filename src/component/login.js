@@ -18,14 +18,26 @@ export default class Login extends Component {
 			<div>
 				<div>
 					登陆页
-					<input type="text" placeholder="请输入账号" />
-					<input type="password" placeholder="请输入密码" />
-					<button>登陆</button>
+					<input type="text" placeholder="请输入账号" ref='username'/>
+					<input type="password" placeholder="请输入密码" ref='password'/>
+					<button onClick={()=>this.getuser()}>登陆</button>
 					<button><Link to="/regist">注册</Link></button>
 
 				</div>
 			</div>
 		)
 	}
+	getuser(){
+		console.log('1111')
+      	axios.post("/users/login",{
+      		username:this.refs.username.value,
+      		password:this.refs.password.value
+     	})
+    	.then(function(response){
+      		console.log(response)
+     
+
+    	})
+  	}	
 	
 }

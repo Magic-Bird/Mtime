@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import '../login.css'
 import {
   BrowserRouter as Router,
   Route,
@@ -13,8 +14,8 @@ export default class Regist extends Component {
 		return(
 			<div>
 				注册页
-				<input type="text" placeholder="请输入账号" />
-				<input type="password" placeholder="请输入密码" />
+				<input type="text" placeholder="请输入账号" ref='username'/>
+				<input type="password" placeholder="请输入密码" ref='password'/>
 				<button onClick={()=>this.getuser()}>注册</button>
 				<button><Link to="/login">登陆</Link></button>
 			</div>
@@ -23,14 +24,14 @@ export default class Regist extends Component {
 	getuser(){
 		console.log('1111')
       	axios.post("/users/regist",{
-      	username:'tan',
-      	password:'123'
-     })
-    .then(function(response){
-      console.log(response)
+      		username:this.refs.username.value,
+      		password:this.refs.password.value
+     	})
+    	.then(function(response){
+      		console.log(response)
      
 
-    })
-  }
+    	})
+  	}
 	
 }
