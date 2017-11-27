@@ -15,16 +15,19 @@ export default class Header extends Component {
 	render(){
 		return(
 			<div className="header">
-				<div className="logo">
-					<img src={logo} />
+				<div className='top'>
+					<div className="logo">
+						<img src={logo} />
+					</div>
+					<ul>
+						<li><Link to="/">首页</Link></li>
+						<li><Link to="/ticket">购票</Link></li>
+						<li><Link to="/shoping">商城</Link></li>
+						<li><Link to="/discovery">发现</Link></li>
+					</ul>
+					<div><Link to="/login">登</Link></div>
 				</div>
-				<ul>
-					<li><Link to="/">首页</Link></li>
-					<li><Link to="/ticket">购票</Link></li>
-					<li><Link to="/shoping">商城</Link></li>
-					<li><Link to="/discovery">发现</Link></li>
-				</ul>
-				<div><Link to="/login">登</Link></div>
+				
 			</div>
 		)
 	}

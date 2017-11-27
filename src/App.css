@@ -63,30 +63,38 @@ ul{
     display: flex;
     box-sizing: border-box;
 }
-.header>ul{
+.header>.top{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+}
+.header>.top>ul{
     list-style: none;
-    width: 60%;
+    width: 70%;
     margin: 0;
     display: flex;
     padding: 0;
     vertical-align: bottom;
 }
-.header>.logo{
+.header>.top>.logo{
     width: 6.6em;
-    height: 3.1em;
+    height: 4.1em;
+
 }
-.header>.logo>img{
+.header>.top>.logo>img{
     width: 4.6em;
     height: 1.5em;
-    margin: 12%;
+    margin: 20%;
 }
 
-.header>ul>li{
+.header >.top> ul > li{
     display: inline-block;
     height: 100%;
     line-height: 50px;
     flex: 1;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .playinglist{
@@ -104,7 +112,7 @@ ul{
 }
 .playinglist>div>img{
   width: 100%;
-  height: 8em;
+  height: 10em;
 }
 .playinglist>.playnow{
   width: 100%;
