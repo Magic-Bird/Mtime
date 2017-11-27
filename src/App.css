@@ -132,7 +132,7 @@ ul{
   padding: 2%;
   position: relative;
 }
-.playinglist>div>span{
+.playinglist>div>a>span{
   position: absolute;
   right: 1em;
   top: 1em;
@@ -144,7 +144,7 @@ ul{
   line-height: 1.5em;
   font-size: 1.2em;
 }
-.playinglist>div>img{
+.playinglist>div>a>img{
   width: 100%;
   height: 10em;
 }

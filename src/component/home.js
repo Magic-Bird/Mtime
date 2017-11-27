@@ -1,5 +1,10 @@
 import React,{Component} from 'react';
 import axios from 'axios'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
 
 export default class Home extends Component {
@@ -29,11 +34,11 @@ export default class Home extends Component {
       if(index<8){
         return (
           <div key={item.id} >
-              
+            <Link to="/xiangqing" >
               <img src={item.img} />
               <div>{item.tCn}</div>
               <span>{item.r}</span>
-            
+            </Link>
           </div>
         );
       }

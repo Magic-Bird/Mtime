@@ -9,6 +9,7 @@ import Shoping from './component/shoping';
 import Discovery from './component/discovery';
 import Login from './component/login';
 import Regist from './component/regist';
+import Xiangqing from './component/xiangqing';
 import {
   BrowserRouter as Router,
   Route,
@@ -91,6 +92,7 @@ const App = () => (
         <Route path="/discovery" component={Discovery}/>
         <Route path="/login" component={Login}/>
         <Route path="/regist" component={Regist}/>
+        <Route path="/xiangqing" component={Xiangqing}/>
       </div>
 
       
