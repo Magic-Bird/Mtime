@@ -28,19 +28,33 @@ export default class Shoping extends Component {
 	}
 	shopping(){
 	
-		ReactDOM.render(
-		  <Carousel autoplay>
-		    <div><div>1</div></div>
-		    <div><div>2</div></div>
-		    <div><div>3</div></div>
-		    <div><div>4</div></div>
-		  </Carousel>
-		, this.refs.banner);
+		// ReactDOM.render(
+		  
+		// , this.refs.banner);
 	}
 	render(){
+		console.log(this.state.message.scrollImg)
+		if(this.state.message.scrollImg){
+			var list =this.state.message.scrollImg.map((item, index)=>{
+		      
+		        return (
+		          <div key={item.url} className='sliderimg'>
+		              
+		              <img src={item.image} />
+		            
+		          </div>
+		        );
+		      
+     
+    		})	
+		}
+				
 		return(
 			<div ref='banner'>
-				
+				<Carousel autoplay>
+		  		  {list}
+		  		  
+		  		</Carousel>
 			</div>
 		)
 	}
