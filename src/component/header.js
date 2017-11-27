@@ -27,6 +27,10 @@ export default class Header extends Component {
 					</ul>
 					<div><Link to="/login">登</Link></div>
 				</div>
+				<div className='searchall'>
+					<div>大连</div>
+					<input type='text' placeholder='影片/影院/影人，任你搜' />
+				</div>
 				
 			</div>
 		)

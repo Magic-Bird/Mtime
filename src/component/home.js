@@ -32,6 +32,7 @@ export default class Home extends Component {
               
               <img src={item.img} />
               <div>{item.tCn}</div>
+              <span>{item.r}</span>
             
           </div>
         );
