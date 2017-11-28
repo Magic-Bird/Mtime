@@ -1,8 +1,93 @@
 .xiangqing{
-	margin-top: 60px;
+
 }
 
 
-.xiangqing img{
-	width: 15em;
+.xiangqing>img{
+	width: 12em;
+    position: absolute;
+    top: 8em;
+    left: 2em;
+}
+
+.type{
+	display: flex;
+}
+
+
+.bgimg{
+	width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(15px);
+    height: 9em;
+}
+.titleimg{
+	width: 100%;
+	height: 6em;
+	background: url("./images/cinemainfo_bg.png") no-repeat center;
+	background-position: 0% 0%;
+	background-size: 100% 50%;
+	position: absolute;
+    top: 13em;
+}
+
+
+
+.name{
+	position: absolute;
+    top: 4em;
+    left: 8em;
+    color: #fff;
+    font-size: 2em;
+}
+.ename{
+    position: absolute;
+    top: 11em;
+    left: 16em;
+    color: #fff;
+}
+.content{
+	margin-top: 21em;
+	padding: 1em;
+}
+.rating{
+	background: #659d0e;
+	position: absolute;
+    top: 6em;
+    font-size: 2em;
+    color: #fff;
+    padding: 0 .18em;
+    left: 15em;
+}
+.runtime{
+    position: absolute;
+    top: 14em;
+    left: 16em;
+}
+.type{
+    position: absolute;
+    top: 15.5em;
+    left: 16em;	
+}
+.com{
+	font-size: 1.5em;
+    color: #f60;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 17em;	
+}
+.button{
+	background: #f60;
+    width: 60%;
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    border-radius: 1.25em;
+    position: absolute;
+    top: 11.5em;
+    left: 50%;
+    margin-left: -30%;
 }

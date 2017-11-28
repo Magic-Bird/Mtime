@@ -34,7 +34,7 @@ export default class Home extends Component {
       if(index<8){
         return (
           <div key={item.id} >
-            <Link to="/xiangqing" >
+            <Link to={"/xiangqing/"+ item.id} >
               <img src={item.img} />
               <div>{item.tCn}</div>
               <span>{item.r}</span>
@@ -46,6 +46,10 @@ export default class Home extends Component {
     })
     return (
       <div className="Home">
+          <div className='searchall'>
+            <div>大连</div>
+            <input type='text' placeholder='影片/影院/影人，任你搜' />
+          </div>
           <div className="playinglist">
             <div className="playnow">
               <div>正在热映（{this.state.message.length}部）</div>
