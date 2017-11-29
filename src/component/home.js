@@ -11,21 +11,36 @@ export default class Home extends Component {
   constructor(){
     super();
     this.state={
-      message:[]
+      message:[],
+      data:[],
+      news:[]
     }
   }
 
   componentDidMount(){
     var that = this;
-    axios.get("/Service/callback.mi/Showtime/LocationMovies.api?locationId=290&t=2017112216292650424")
+    axios.get("/Service/callback.mi/Showtime/LocationMovies.api?locationId=729&t=2017112216292650424")
     .then(function(response){
-      console.log(response.data.ms)
+      console.log(response.data)
       that.setState({
-        message:response.data.ms
+        message:response.data.ms,
+        data:response.data
       })
       
 
     })
+    axios.get("/Service/callback.mi/PageSubArea/GetFirstPageAdvAndNews.api?t=201711299112472160")
+    .then(function(response){
+      console.log(response.data)
+      that.setState({
+        news:response.data.hotPoints
+      })
+      
+
+    })
+
+
+
     
   }
   render() {
@@ -48,6 +63,14 @@ export default class Home extends Component {
       }
      
     })
+    var news =this.state.news.map((item, index)=>{
+        return (
+          <div key={item.id} >
+              <img src={item.img} />
+              <div>{item.title}</div>
+          </div>
+        );
+    })
     return (
       <div className="Home">
           <div className='searchall'>
@@ -59,6 +82,14 @@ export default class Home extends Component {
               <div>正在热映（{this.state.message.length}部）</div>
             </div>
             {list}
+            <div className="playnow play_bottom">
+              <div>即将上映（{this.state.data.totalComingMovie}部）</div>
+            </div>
+          </div>
+          <p></p>
+          <div className="newslist">
+            <div>今日热点</div>
+            {news}
           </div>
       </div>
     );

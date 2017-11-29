@@ -61,7 +61,11 @@ export default class Xiangqing extends Component {
           <div className='name'>{this.state.message.titleCn}</div>
           <div className='ename'>{this.state.message.titleEn}</div>
           <div className='content'>{this.state.message.content}</div>
-          <div className='rating'>{this.state.message.rating}</div>
+          {
+            this.state.message.rating>0?
+            <div className='rating'>{this.state.message.rating}</div>:<div></div>
+          }
+          
           <div className='runtime'>{this.state.message.runTime}</div>
           <div className='type'>{list}</div>
           <div className='com'>{this.state.message.commonSpecial}</div>          
