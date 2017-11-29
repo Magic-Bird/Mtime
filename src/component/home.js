@@ -51,7 +51,7 @@ export default class Home extends Component {
     return (
       <div className="Home">
           <div className='searchall'>
-            <div>大连</div>
+            <div className="iconfont">大连 &#xe8f7;</div>
             <input type='text' placeholder='影片/影院/影人，任你搜' />
           </div>
           <div className="playinglist">
