@@ -203,8 +203,34 @@ ul{
     box-shadow: 0 0.2em 0.2em rgba(51, 51, 51, 0.05) inset;
 }
 
+.newslist{
+  padding: 1em;
+}
 
+.hot{
+  font-size: 2em;
+  font-weight: 900;
+}
 
-.newslist>div>img{
+.newslist>.news{
+  display: flex;
+  box-sizing: border-box;
+  padding: 2em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.newslist>.news>img{
   width: 12em;
+  height: 8em;
+}
+.newslist>.news>div{
+  padding-left: 1em;
+}
+
+.newslist>.news>div>p{
+  font-size: 1.2em;
+}
+.newslist>.news>div>div{
+  font-size: 1.6em;
+  font-weight: 900;
 }

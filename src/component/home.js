@@ -65,9 +65,13 @@ export default class Home extends Component {
     })
     var news =this.state.news.map((item, index)=>{
         return (
-          <div key={item.id} >
+          <div key={item.id} className="news">
               <img src={item.img} />
-              <div>{item.title}</div>
+              <div>
+                <div>{item.title}</div>
+                <p>{item.desc}</p>
+              </div>
+              
           </div>
         );
     })
@@ -88,7 +92,7 @@ export default class Home extends Component {
           </div>
           <p></p>
           <div className="newslist">
-            <div>今日热点</div>
+            <div className='hot'>今日热点</div>
             {news}
           </div>
       </div>
