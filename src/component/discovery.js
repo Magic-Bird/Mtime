@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import axios from 'axios'
 import '../discovery.css'
+import lazyload from 'react-lazyload'
 
 
 export default class Discovery extends Component {

@@ -9,7 +9,8 @@ export default class Shoping extends Component {
 	constructor(){
 	  super();
 	  this.state={
-	    message:[]
+	    message:[],
+	    nav:[]
 	  }
 	}
 	componentDidMount(){
@@ -19,7 +20,8 @@ export default class Shoping extends Component {
    		.then(function(response){
    		  console.log(response.data)
    		  that.setState({
-   		    message:response.data
+   		    message:response.data,
+   		    nav:response.data.navigatorIcon
    		  })
    		  
 	
@@ -33,7 +35,7 @@ export default class Shoping extends Component {
 		// , this.refs.banner);
 	}
 	render(){
-		console.log(this.state.message.scrollImg)
+		// console.log(this.state.message.scrollImg)
 		if(this.state.message.scrollImg){
 			var list =this.state.message.scrollImg.map((item, index)=>{
 		      
@@ -48,13 +50,26 @@ export default class Shoping extends Component {
      
     		})	
 		}
+		if(this.state.nav){
+			var nav =this.state.nav.map((item, index)=>{
+		        return (
+		          <div key={item.url} className='nav_list'>
+		              <img src={item.image} />
+		              <div>{item.iconTitle}</div>
+		          </div>
+		        );
+    		})	
+		}
 				
 		return(
 			<div ref='banner'>
 				<Carousel autoplay>
 		  		  {list}
-		  		  
 		  		</Carousel>
+		    	<div className='nav'>
+		    		{nav}
+		    	</div>
+		    	<p></p>		  		
 			</div>
 		)
 	}
