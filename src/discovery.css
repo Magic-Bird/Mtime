@@ -1,0 +1,27 @@
+
+.list{
+	margin-top: 1em
+}
+.list>div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+.list>div>img{
+	width: 10em;
+	height: 8em;
+}
+
+.list>.type1>div{
+	width: 100%;
+	font-size: 1.5em;
+	font-weight: 900;
+}
+.list>.typeo>div{
+	margin-left: 1em;
+	flex: 1;
+	font-size: 1.5em;
+	font-weight: 900;
+}
