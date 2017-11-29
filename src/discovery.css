@@ -1,4 +1,25 @@
 
+.dis_top{
+	width: 100%;
+	position: relative;
+}
+.dis_top>img{
+	width: 100%;
+	display: block;
+}
+.dis_top>span{
+	position: absolute;
+	text-align: center;
+	font-size: 1.7em;
+	font-weight: 900;
+	line-height: 2.8em;
+	color: #fff;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background: rgba(20,20,20,.5);
+}
+
 .list{
 	margin-top: 1em
 }

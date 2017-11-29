@@ -8,7 +8,7 @@ export default class Discovery extends Component {
   	  super();
   	  this.state={
   	    message:[],
-	
+		view:[]
   	  }
   	}
 	
@@ -19,9 +19,19 @@ export default class Discovery extends Component {
   	  var that = this;
   	  axios.get(`Service/callback.mi/News/NewsList.api?t=2017112912443373702&pageIndex=1`)
   	  .then(function(response){
-  	    console.log(response.data)
+  	    // console.log(response.data)
   	    that.setState({
   	      message:response.data.newsList
+	
+  	    })
+  	    
+	
+  	  })
+   	  axios.get(`Service/callback.mi/PageSubArea/GetRecommendationIndexInfo.api?t=2017112913395668253`)
+  	  .then(function(response){
+  	    console.log(response.data.news)
+  	    that.setState({
+  	      view:response.data.news
 	
   	    })
   	    
@@ -53,6 +63,10 @@ export default class Discovery extends Component {
 		})
 		return(
 			<div>
+				<div className='dis_top'>
+					<img src={this.state.view.imageUrl}/>
+					<span>{this.state.view.title}</span>
+				</div>
 				{news}
 			</div>
 		)
