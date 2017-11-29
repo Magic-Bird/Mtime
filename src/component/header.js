@@ -25,7 +25,7 @@ export default class Header extends Component {
 						<li><Link to="/shoping">商城</Link></li>
 						<li><Link to="/discovery">发现</Link></li>
 					</ul>
-					<div><Link to="/login">登</Link></div>
+					<div className='user'><Link to="/login" className='iconfont'>&#xe8c8;</Link></div>
 				</div>
 
 				

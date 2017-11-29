@@ -37,7 +37,11 @@ export default class Home extends Component {
             <Link to={"/xiangqing/"+ item.id} >
               <img src={item.img} />
               <div>{item.tCn}</div>
-              <span>{item.r}</span>
+              {
+                item.r>0?
+                <span>{item.r}</span>:<div></div>
+              }
+              
             </Link>
           </div>
         );
