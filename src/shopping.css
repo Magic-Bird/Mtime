@@ -1,6 +1,6 @@
 .ant-carousel .slick-slide {
   text-align: center;
-  height: 23em;
+  height: 17rem;
   line-height: 160px;
   background: #364d79;
   overflow: hidden;
@@ -23,19 +23,34 @@
 .nav_list{
 	width: 25%;
 	box-sizing: border-box;
-	padding: 1em 2em;
+	padding: .5rem 1.7rem;
 }
 .nav_list>div{
 	width: 100%;
 	text-align: center;
-	line-height: 1.5em;
-	font-size: 1.5em;
+	line-height: 1rem;
+	font-size: 1rem;
 }
 .nav_list>img{
 	width: 100%;
 }
 .main>div>p{
-    height: 2em;
+    height: 1.5rem;
     background: #f6f6f6;
-    box-shadow: 0 0.2em 0.2em rgba(51, 51, 51, 0.05) inset;	
+    box-shadow: 0 0.2rem 0.2rem rgba(51, 51, 51, 0.05) inset;	
+}
+
+.topic{
+	overflow-x: auto;
+	height: 10rem;
+	white-space: nowrap;
+	width: 100%;
+}
+.topic_nav{
+	width: 5rem;
+	display: inline-block;
+	margin: .7rem;
+}
+.topic_nav>img{
+	width: 100%;
 }

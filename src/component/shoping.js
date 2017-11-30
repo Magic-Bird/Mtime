@@ -10,7 +10,8 @@ export default class Shoping extends Component {
 	  super();
 	  this.state={
 	    message:[],
-	    nav:[]
+	    nav:[],
+	    topic:[]
 	  }
 	}
 	componentDidMount(){
@@ -21,7 +22,8 @@ export default class Shoping extends Component {
    		  console.log(response.data)
    		  that.setState({
    		    message:response.data,
-   		    nav:response.data.navigatorIcon
+   		    nav:response.data.navigatorIcon,
+   		    topic:response.data.topic
    		  })
    		  
 	
@@ -60,7 +62,15 @@ export default class Shoping extends Component {
 		        );
     		})	
 		}
+		var topic=this.state.topic.map((item,index)=>{
+			return(
 				
+					<div className='topic_nav' key={item.titleCn}>
+						<img src={item.checkedImage}/>
+					</div>
+				
+			)
+		})		
 		return(
 			<div ref='banner'>
 				<Carousel autoplay>
@@ -69,7 +79,10 @@ export default class Shoping extends Component {
 		    	<div className='nav'>
 		    		{nav}
 		    	</div>
-		    	<p></p>		  		
+		    	<p></p>
+		    	<div className='topic'>
+		    		{topic}
+		    	</div>		  		
 			</div>
 		)
 	}
