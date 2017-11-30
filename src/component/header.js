@@ -5,7 +5,8 @@ import logo from '../images/logo_mtime.png'
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  NavLink
 } from 'react-router-dom';
 
 export default class Header extends Component {
@@ -20,10 +21,10 @@ export default class Header extends Component {
 						<img src={logo} />
 					</div>
 					<ul>
-						<li><Link to="/">首页</Link></li>
-						<li><Link to="/ticket">购票</Link></li>
-						<li><Link to="/shoping">商城</Link></li>
-						<li><Link to="/discovery">发现</Link></li>
+						<li><NavLink activeClassName='heightlight' to="/home">首页</NavLink></li>
+						<li><NavLink activeClassName='heightlight' to="/ticket">购票</NavLink></li>
+						<li><NavLink activeClassName='heightlight' to="/shoping">商城</NavLink></li>
+						<li><NavLink activeClassName='heightlight' to="/discovery">发现</NavLink></li>
 					</ul>
 					<div className='user'><Link to="/login" className='iconfont'>&#xe8c8;</Link></div>
 				</div>

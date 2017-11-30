@@ -13,7 +13,8 @@ import Xiangqing from './component/xiangqing';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Switch
 } from 'react-router-dom';
 
 
@@ -86,13 +87,15 @@ const App = () => (
     <div className='app'>
       <Header/>
       <div className='main'>
-        <Route exact path="/" component={Home}/>
+      <Switch>
+        <Route exact path="/home" component={Home}/>
         <Route path="/ticket" component={Ticket}/>
         <Route path="/shoping" component={Shoping}/>
         <Route path="/discovery" component={Discovery}/>
         <Route path="/login" component={Login}/>
         <Route path="/regist" component={Regist}/>
         <Route path="/xiangqing/:Mid" component={Xiangqing}/>
+      </Switch>  
       </div>
 
       

@@ -42,14 +42,14 @@
 
 .topic{
 	overflow-x: auto;
-	height: 10rem;
+	height: 7rem;
 	white-space: nowrap;
 	width: 100%;
 }
 .topic_nav{
 	width: 5rem;
 	display: inline-block;
-	margin: .7rem;
+	margin: 0 .7rem;
 }
 .topic_nav>img{
 	width: 100%;

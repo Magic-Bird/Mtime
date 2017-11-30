@@ -10,9 +10,9 @@
 .dis_top>span{
 	position: absolute;
 	text-align: center;
-	font-size: 1.7em;
+	font-size: 1.5rem;
 	font-weight: 900;
-	line-height: 2.8em;
+	line-height: 3rem;
 	color: #fff;
 	width: 100%;
 	bottom: 0;
@@ -21,28 +21,30 @@
 }
 
 .list{
-	margin-top: 1em
+	
 }
 .list>div{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 1em;
+	padding: 1rem;
 }
 
 .list>div>img{
-	width: 10em;
-	height: 8em;
+	width: 7.5rem;
+	height: 6rem;
 }
 
 .list>.type1>div{
 	width: 100%;
-	font-size: 1.5em;
+	font-size: 1.2rem;
 	font-weight: 900;
+	line-height: 2.4rem;
 }
 .list>.typeo>div{
-	margin-left: 1em;
+	margin-left: 1rem;
 	flex: 1;
-	font-size: 1.5em;
+	font-size: 1.2rem;
 	font-weight: 900;
+	line-height: 1.4rem;
 }

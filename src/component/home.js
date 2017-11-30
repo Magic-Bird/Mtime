@@ -51,7 +51,7 @@ export default class Home extends Component {
           <div key={item.id} >
             <Link to={"/xiangqing/"+ item.id} >
               <img src={item.img} />
-              <div>{item.tCn}</div>
+              <div className='moviename'>{item.tCn}</div>
               {
                 item.r>0?
                 <span>{item.r}</span>:<div></div>
